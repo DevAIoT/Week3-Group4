@@ -66,3 +66,64 @@ https://www.canva.com/design/DAG_f5ysPx4/z-lyzf3KjjCzknzAGIFPfQ/edit?utm_content
 * **![Image 3: Off load](SCR-20260126-kvwb.png)**
 
 ---
+
+## **Task 4: Edge, Fog and Cloud Smart Routing System**
+
+### **1. Objective**
+
+Design and implement a smart routing solution that works as an intelligent router, deciding whether to process ML inference locally on the Edge, offload to Fog, or forward to the Cloud based on image complexity.
+
+### **2. Architecture**
+
+The system implements a three-tier distributed computing architecture:
+
+| Node | Role | Description |
+| --- | --- | --- |
+| **Cloud** | Server Only | Most powerful device - processes complex images |
+| **Fog** | Server + Client | Medium capability - acts as intermediary, processes medium complexity images |
+| **Edge** | Client Only | Standard device - processes simple images locally |
+
+**Routing Chain:**
+```
+Edge Client → Fog Server → Cloud Server
+```
+
+### **3. Smart Routing Logic**
+
+The routing decision is based on **image complexity** measured using the variance of pixel values (`np.var(image)`):
+
+| Complexity (Variance) | Processing Location |
+| --- | --- |
+| < 2000 | **Edge** (Local processing) |
+| 2000 - 3500 | **Fog** (Intermediate processing) |
+| ≥ 3500 | **Cloud** (Remote processing) |
+
+### **4. Image Generation**
+
+To test the routing system effectively, three types of images are generated:
+
+* **Simple Images** (Low Variance ~100-500): Nearly uniform color with minimal noise
+* **Medium Images** (Medium Variance ~1000-3000): Gradient patterns with moderate noise
+* **Complex Images** (High Variance ~5000-7000): Fully random pixel values
+
+### **5. Implementation Details**
+
+**Files Created:**
+* `edge_client.py` - Edge device with local MobileNetV2 model and smart routing
+* `fog_server.py` - Fog node with dual server/client functionality
+
+**Key Features:**
+* Variance-based complexity calculation on raw images (0-255 range)
+* Automatic routing decisions at each tier
+* Comprehensive latency tracking by inference source
+* Statistics reporting (requests per location, latency metrics)
+* Support for 50+ inference requests per benchmark
+
+### **6. Results**
+
+The benchmark results show the distribution of inference requests across the three tiers and latency statistics for each processing location.
+
+* **![Task 4: Edge Client Benchmark Results](Screenshot%20From%202026-01-26%2015-31-20.png)**
+* **![Task 4: Smart Routing Distribution](Screenshot%20From%202026-01-26%2015-33-39.png)**
+
+---
