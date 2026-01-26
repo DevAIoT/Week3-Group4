@@ -58,6 +58,8 @@ The following images document the resource consumption and execution logs during
 * **![Image 1: System Monitoring during Power Saver Mode](SCR-20260126-kpwu.png)**
 * **![Image 2: System Monitoring during High Performance Mode](SCR-20260126-kmti-2.png)**
 
+https://www.canva.com/design/DAG_f5ysPx4/z-lyzf3KjjCzknzAGIFPfQ/edit?utm_content=DAG_f5ysPx4&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
+
 
 ## **Task 2**
 
