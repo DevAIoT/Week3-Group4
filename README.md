@@ -1,7 +1,5 @@
 # Week3-Group4
 
-Here is a formal English draft for your **Task 1: Vertical Scaling** report, organized for clarity and technical professionalism.
-
 ---
 
 ## **Task 1: Vertical Scaling Evaluation Report**
