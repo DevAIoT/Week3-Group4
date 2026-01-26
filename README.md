@@ -58,6 +58,11 @@ The following images document the resource consumption and execution logs during
 * **![Image 1: System Monitoring during Power Saver Mode](SCR-20260126-kpwu.png)**
 * **![Image 2: System Monitoring during High Performance Mode](SCR-20260126-kmti-2.png)**
 
+
+## **Task 2**
+
+* **![Image 3: Off load](SCR-20260126-kvwb.png)**
+
 ---
 
 **Would you like me to help you write the Python script used for this experiment, or perhaps refine the analysis section for a specific AIoT use case?**
