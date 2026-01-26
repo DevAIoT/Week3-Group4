@@ -64,5 +64,3 @@ The following images document the resource consumption and execution logs during
 * **![Image 3: Off load](SCR-20260126-kvwb.png)**
 
 ---
-
-**Would you like me to help you write the Python script used for this experiment, or perhaps refine the analysis section for a specific AIoT use case?**
