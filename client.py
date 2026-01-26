@@ -6,7 +6,9 @@ import requests
 from tensorflow.keras.applications.mobilenet_v2 import preprocess_input
 
 # Configuration: Server endpoint
-SERVER_URL = "http://localhost:5000/predict"
+SERVER_IP = "10.158.13.201"
+SERVER_PREDICT_URL = f"http://{SERVER_IP}:5000/predict"
+SERVER_HEALTH_URL = f"http://{SERVER_IP}:5000/health"
 
 
 # Function to generate a dummy image
@@ -50,7 +52,7 @@ def send_prediction_request(image_array):
     request_start = time.time()
 
     # Send POST request to server
-    response = requests.post(SERVER_URL, json=payload)
+    response = requests.post(SERVER_PREDICT_URL, json=payload)
 
     # Record end time
     request_end = time.time()
@@ -162,7 +164,7 @@ if __name__ == "__main__":
     # Check if server is reachable
     print("\nChecking server availability...")
     try:
-        health_check = requests.get("http://localhost:5000/health", timeout=2)
+        health_check = requests.get(SERVER_HEALTH_URL, timeout=2)
         if health_check.status_code == 200:
             print("✓ Server is running and healthy")
         else:
