@@ -77,7 +77,7 @@ def run_client_benchmark(mode="same", iterations=100):
         iterations: number of requests to send
     """
     print(f"\n=== Client Benchmark: {mode.upper()} Images ===")
-    print(f"Server endpoint: {SERVER_URL}")
+    print(f"Server endpoint: {SERVER_PREDICT_URL}")
     print(f"Iterations: {iterations}")
 
     # Pre-generate one image for 'same' mode
