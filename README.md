@@ -126,4 +126,6 @@ The benchmark results show the distribution of inference requests across the thr
 * **![Task 4: Edge Client Benchmark Results](Screenshot%20From%202026-01-26%2015-31-20.png)**
 * **![Task 4: Smart Routing Distribution](Screenshot%20From%202026-01-26%2015-33-39.png)**
 
+https://www.canva.com/design/DAG_lzCDUfA/VSj9gxO1aDsUwkqDbN-nZA/edit?utm_content=DAG_lzCDUfA&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
+
 ---
