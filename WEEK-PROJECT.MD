@@ -52,3 +52,5 @@ To provide granular data, packages can be equipped with **QR codes**.
 While the current prototype is a centralized wired unit, the architecture is designed to scale. In a production environment, the **ESP32** could be introduced as a wireless **BLE (Bluetooth Low Energy)** node. This would allow multiple IMU sensors to be placed on individual shelves, all communicating back to a single NVIDIA Jetson "Gateway" for visual confirmation.
 
 https://www.canva.com/design/DAG_rEtONS0/8d57TwJhT7Z7AQvbdKAvbA/edit?utm_content=DAG_rEtONS0&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
+
+https://www.canva.com/design/DAG_xYL3mPE/6Lk2J0yiK54xoiWRJUF5zQ/edit?utm_content=DAG_xYL3mPE&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
